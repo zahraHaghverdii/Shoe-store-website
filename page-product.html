@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --fav icon -- -->
+    <link rel="shortcut icon" type="img/png" href="./img/logo/logo.png">
+    <!-- --font icon-- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- --slider-- -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- --stayle-- -->
+    <link rel="stylesheet" href="./css/stayle.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/page-products.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+    <title>تمامی محصولات</title>
+</head>
+
+<body>
+
+    <!-- header -->
+    <div class="header">
+        <div class="navbar">
+            <div class="hamburger">
+                <div class="bars1"></div>
+                <div class="bars2"></div>
+                <div class="bars3"></div>
+            </div>
+            <div class="logo">
+                <a href="./index.html"><img src="./img/logo/NIKE.png" alt="logo"></a>
+            </div>
+            <div class="menu">
+                <ul class="menu-link">
+                    <li><a href="./index.html">صفحه اصلی</a></li>
+                    <li><a href="./contact.html">تماس با ما</a></li>
+                    <li><a href="./about.html">درباره ما</a></li>
+                    <li class="activeMenu"><a href="./page-product.html" class="activeMenu">محصولات</a></li>
+                    <li class="responsive-item"><a href="./cart-product.html">سبد خرید</a></li>
+                    <li class="responsive-item"><a href="./login.html">ورود / ثبت نام</a></li>
+                </ul>
+            </div>
+            <div class="btn-header">
+                <div class="btn-login">
+                    <div class="btn-login-icon">
+                        <i class="fa fa-user-circle"></i>
+                    </div>
+                </div>
+                <div class="btn-cart">
+                    <div id="cartProductIcon">
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                    <div class="number-product-cart">
+                        <span id="numberProduct" class="numberProduct">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- dropdown-login-signin -->
+        <div class="dropdown-login-signin">
+            <div class="box-login-signin-caret-up"><i class="fa fa-caret-up"></i></div>
+            <a href="./login.html">ورود</a>
+            <a href="./signin.html">عضویت</a>
+        </div>
+
+        <!-- box-cadr-products -->
+        <div class="secton-box-cadr-products">
+            <div class="section-box-cadr-product">
+                <div class="box-cart-caret-up"><i class="fa fa-caret-up"></i></div>
+                <div class="header-box-cadr-products">
+                    <div class="number-product-box-cadr">
+                        <span>
+                            <small class="numberProductBoxCadr" id="numberProductBoxCadr">0</small>
+                            <p>کالا</p>
+                        </span>
+                    </div>
+                    <div class="getProduct">
+                        <p><a href="./cart-page.html">مشاهده سبد خرید</a></p>
+                        <i class="	fa fa-angle-left"></i>
+                    </div>
+                </div>
+                <div class="box-cadr-products">
+                    <ul id="boxCadrProducts">
+                        <!-- <li class="new-item-product">
+                            <div class="box-img-new-item"><img src="" alt=""></div>
+                            <h5></h5>
+                            <h6></h6>
+                            <div class="">
+                                <div class="button-minus" id=""></div>
+                                <span class="count-product"></span>
+                                <div class="button-plus" id=""></div>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="box-total" id="boxTotal">
+                    <div class="total">
+                        <h4>مجموع</h4>
+                        <span id="total">0.0</span> <small>تومان</small>
+                    </div>
+                    <div class="btn" id="btnRemove-all"><a href="./cart-page.html">ادامه خرید</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- main -->
+    <div class="main">
+
+        <!-- products woman-->
+        <div class="section-products">
+            <div class="container">
+                <div class="box-products">
+                    <div class="cadr-product" id="1">
+                        <div class="cadr-img">
+                            <img src="./img/products/product-woman/اسنا - زنانه - p1-300x300.jpg" alt="محصولات">
+                        </div>
+                        <div class="product-head">
+                            <span class="on-sale">43%</span>
+                        </div>
+                        <div class="cadr-body">
+                            <div class="name-product">
+                                <p>کفش ورزشی زنانه آسنا کد 83499567</p>
+                            </div>
+                            <div class="box-price">
+                                <span id="newPrice">650000</span> <small>تومان</small>
+                                <p class="oldPrice">
+                                    <span>720000</span> <small>تومان</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cadr-footer">
+                            <div class="btn btn-add-product" onclick="funcAddProduct(1)">
+                                <p>افزودن به سبد خرید</p>
+                                <i class="fa fa-angle-left"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cadr-product" id="2">
+                        <div class="cadr-img">
+                            <img src="./img/products/product-woman/اسنا - زنانه - p2-300x300.jpg" alt="محصولات">
+                        </div>
+                        <div class="cadr-body">
+                            <div class="name-product">
+                                <p>کفش ورزشی زنانه مهکام کد 83594638</p>
+                            </div>
+                            <div class="box-price">
+                                <span id="newPrice">199000</span> <small>تومان</small>
+                            </div>
+                        </div>
+                        <div class="cadr-footer">
+                            <div class="btn btn-add-product" onclick="funcAddProduct(2)">
+                                <p>افزودن به سبد خرید</p>
+                                <i class="fa fa-angle-left"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cadr-product" id="3">
+                        <div class="cadr-img">
+                            <img src="./img/products/product-woman/اسنا - زنانه - p3-300x300.jpg" alt="محصولات">
+                        </div>
+                        <div class="product-head">
+                            <span class="on-new">جدید</span>
+                        </div>
+                        <div class="cadr-body">
+                            <div class="name-product">
+                                <p>کفش ورزشی زنانه هاکی نوین کد 83592656</p>
+                            </div>
+                            <div class="box-price">
+                                <span id="newPrice">860000</span> <small>تومان</small>
+                            </div>
+                        </div>
+                        <div class="cadr-footer">
+                            <div class="btn btn-add-product" onclick="funcAddProduct(3)">
+                                <p>افزودن به سبد خرید</p>
+                                <i class="fa fa-angle-left"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cadr-product" id="4">
+                        <div class="cadr-img">
+                            <img src="./img/products/product-woman/اسنا - زنانه - p4-300x300.jpg" alt="محصولات">
+                        </div>
+                        <div class="product-head">
+                            <span class="on-sale">41%</span>
+                        </div>
+                        <div class="cadr-body">
+                            <div class="name-product">
+                                <p>کفش ورزشی زنانه دزلی کد 83490644</p>
+                            </div>
+                            <div class="box-price">
+                                <span id="newPrice">290000</span> <small>تومان</small>
+                                <p class="oldPrice">
+                                    <span>490000</span> <small>تومان</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cadr-footer">
+                            <div class="btn btn-add-product" onclick="funcAddProduct(4)">
+                                <p>افزودن به سبد خرید</p>
+                                <i class="fa fa-angle-left"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cadr-product" id="5">
+                        <div class="cadr-img">
+                            <img src="./img/products/product-woman/اسنا - زنانه - p5-300x300.jpg" alt="محصولات">
+                        </div>
+                        <div class="product-head">
+                            <span class="on-done">تمام</span>
+                        </div>
+                        <div class="cadr-body">
+                            <div class="name-product">
+                                <p>پوتین ایمنی زنانه پی یو 808 کد 16192873</p>
+                            </div>
+                            <div class="box-price">
+                                <span id="newPrice">223000</span> <small>تومان</small>
+                            </div>
+                        </div>
+                        <div class="cadr-footer">
+                            <div class="btn btn-add-product" onclick="funcAddProduct(5)">
+                                <p>افزودن به سبد خرید</p>
+                                <i class="fa fa-angle-left"></i>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="cadr-product" id="6">
+                        <div class="cadr-img">
+                            <img src="./img/products/product-man/p1-300x300.jpg" alt="محصولات">
+                        </div>
+                        <div class="product-head">
+                            <span class="on-sale">43%</span>
+                        </div>
+                        <div class="cadr-body">
+                            <div class="name-product">
+                                <p>صندل مردانه تراز کد 19496748</p>
+                            </div>
+                            <div class="box-price" onclick="funcAddProduct(6)">
+                                <span id="newPrice">500000</span> <small>تومان</small>
+                                <p class="oldPrice">
+                                    <span>174000</span> <small>تومان</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cadr-footer">
+                            <div class="btn btn-add-product">
+                                <p>افزودن به سبد خرید</p>
+                                <i class="fa fa-angle-left"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cadr-product" id="7">
+                        <div class="cadr-img">
+                            <img src="./img/products/product-man/p5-300x300.jpg" alt="محصولات">
+                        </div>
+                        <div class="cadr-body">
+                            <div class="name-product">
+                                <p>صندل مردانه آترابان کد 39599320</p>
+                            </div>
+                            <div class="box-price">
+                                <span id="newPrice">220000</span> <small>تومان</small>
+                            </div>
+                        </div>
+                        <div class="cadr-footer" onclick="funcAddProduct(7)">
+                            <div class="btn btn-add-product">
+                                <p>افزودن به سبد خرید</p>
+                                <i class="fa fa-angle-left"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cadr-product" id="8">
+                        <div class="cadr-img">
+                            <img src="./img/products/product-man/p4-300x300.jpg" alt="محصولات">
+                        </div>
+                        <div class="product-head">
+                            <span class="on-new">جدید</span>
+                        </div>
+                        <div class="cadr-body">
+                            <div class="name-product">
+                                <p>کفش روزمره مردانه ونیز نیو کد 54597784</p>
+                            </div>
+                            <div class="box-price">
+                                <span id="newPrice">620000</span> <small>تومان</small>
+                            </div>
+                        </div>
+                        <div class="cadr-footer" onclick="funcAddProduct(8)">
+                            <div class="btn btn-add-product">
+                                <p>افزودن به سبد خرید</p>
+                                <i class="fa fa-angle-left"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cadr-product" id="9">
+                        <div class="cadr-img">
+                            <img src="./img/products/product-man/p2-300x300.jpg" alt="محصولات">
+                        </div>
+                        <div class="product-head">
+                            <span class="on-sale">41%</span>
+                        </div>
+                        <div class="cadr-body">
+                            <div class="name-product">
+                                <p>کفش رسمی مردانه سورن پلاس کد 14195853</p>
+                            </div>
+                            <div class="box-price">
+                                <span id="newPrice">170000</span> <small>تومان</small>
+                                <p class="oldPrice">
+                                    <span>190000</span> <small>تومان</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cadr-footer" onclick="funcAddProduct(9)">
+                            <div class="btn btn-add-product">
+                                <p>افزودن به سبد خرید</p>
+                                <i class="fa fa-angle-left"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cadr-product" id="10">
+                        <div class="cadr-img">
+                            <img src="./img/products/product-man/p3-300x300.jpg" alt="محصولات">
+                        </div>
+                        <div class="product-head">
+                            <span class="on-done">تمام</span>
+                        </div>
+                        <div class="cadr-body">
+                            <div class="name-product">
+                                <p>کفش ورزشی مردانه رودک کد 83490302</p>
+                            </div>
+                            <div class="box-price">
+                                <span id="newPrice">220000</span> <small>تومان</small>
+                            </div>
+                        </div>
+                        <div class="cadr-footer" onclick="funcAddProduct(10)">
+                            <div class="btn btn-add-product">
+                                <p>افزودن به سبد خرید</p>
+                                <i class="fa fa-angle-left"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <img src="./img/logo/NIKE-FFF.png" alt="">
+                    </div>
+                </div>
+                <div class="footr-menu">
+                    <ul class="footer-menu2">
+                        <h3>ارتباط با ما</h3>
+                        <li><i class="	fa fa-caret-left"></i><a href="./about.html">درباره ما</a></li>
+                        <li><i class="	fa fa-caret-left"></i><a href="./contact.html">تماس با ما</a></li>
+                        <li><i class="	fa fa-caret-left"></i><a href="./cart-product.html">سبد خرید</a></li>
+                        <li><i class="	fa fa-caret-left"></i><a href="./login.html">ورود / عضویت</a></li>
+                    </ul>
+                    <ul class="footer-menu1">
+                        <h3>دسترسی سریع</h3>
+                        <li><i class="	fa fa-caret-left"></i><a href="./index.html">صفحه اصلی</a></li>
+                        <li><i class="	fa fa-caret-left"></i><a href="./page-product.html">مردانه</a></li>
+                        <li><i class="	fa fa-caret-left"></i><a href="./page-product.html">زنانه</a></li>
+                        <li><i class="	fa fa-caret-left activeFooter"></i><a href="./page-product.html"
+                                class="activeFooter">محصولات ما</a></li>
+                    </ul>
+                    <ul class="footer-menu3">
+                        <h3>نشانی ما</h3>
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <p>شماره تماس : <a href="tel:0123456789"><span>0123456789</span></a></p>
+                        </li>
+                        <li>
+                            <i class="	fa fa-map-marker"></i>
+                            <p>
+                                تهران - شهریار - دانشگاه پیام نور شهریار
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-icon">
+                <ul>
+                    <li><a href="./"><i class="fa fa-paper-plane-o"></i></a></li>
+                    <li><a href="./"><i class="	fa fa-whatsapp"></i></a></li>
+                    <li><a href="./"><i class="	fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- modal-product-add-remove -->
+    <div class="modal-product-add-remove">
+        <div class="header-modal">
+            <h2>سبد خرید</h2>
+            <i class="fa fa-times-circle-o" id="closeModal"></i>
+        </div>
+        <div class="body-modal">
+            <p class="result-modal"></p>
+        </div>
+        <div class="footer-modal">
+            <div class="btn continue-shopping" id="continue-shopping">ادامه خرید</div>
+            <div class="btn payment" id="payment">تایید و پرداخت</div>
+        </div>
+    </div>
+
+    <!-- coverBody -->
+    <div id="coverBody"></div>
+
+
+    <!-- --------------------javascript---------------- -->
+    <!-- --slider-- -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- --js-- -->
+    <script src="./js/header.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

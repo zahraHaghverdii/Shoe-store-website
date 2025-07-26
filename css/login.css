@@ -1,0 +1,193 @@
+body{
+    background: #f2f2f2;
+}
+.main{
+    padding: 3rem 0 7.5rem 0;
+}
+
+/* section-login */
+.section-login{
+    display: flex;
+    border-bottom: 1px solid #f2f2f2; 
+    width: 90%;
+    height: 660px;
+    margin: 0 auto;
+}
+
+/* box-img-login */
+.box-img-login{
+    width: 50%;
+    height: 100%;
+}
+.box-img-login img{
+    border-radius: 0 26px 26px 0;
+    -webkit-border-radius: 0 26px 26px 0;
+    -moz-border-radius: 0 26px 26px 0;
+    -ms-border-radius: 0 26px 26px 0;
+    -o-border-radius: 0 26px 26px 0;
+}
+
+/* box-login-signin */
+.box-login-signin{
+    background-color: #fcfcfc;
+    padding: 10px 72px 10px 72px;
+    width: 50%;
+    height: 100%;
+    border-radius: 26px 0 0 26px;
+    -webkit-border-radius: 26px 0 0 26px;
+    -moz-border-radius: 26px 0 0 26px;
+    -ms-border-radius: 26px 0 0 26px;
+    -o-border-radius: 26px 0 0 26px;
+}
+
+/* header-box-login */
+.header-box-login{
+    align-items: center;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+.header-box-login h1{
+    color: #014268;
+    text-align: center;
+}
+
+.box-form form{
+    align-items: center;
+}
+.box-input{
+    width: 100%;
+    margin: 1.8rem 0;
+}
+form .box-input label{
+    color: #777;
+    text-align: right;
+}
+.box-input label small{
+    color: red;
+}
+.box-input input{
+    width: 100%;
+    outline: none;
+    background: initial;
+    border: 1px solid #014268;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+.box-input input.error-input , form .box-input label.error-input{
+    border: 1px solid red;
+}
+.box-input input.success-input , form .box-input label.success-input{
+    border: 1px solid rgb(64, 175, 0);
+}
+
+.box-input:nth-child(3) , .box-input:nth-child(4),
+.box-input:nth-child(3) input , .box-input:nth-child(4) input{
+    position: relative;
+}
+.box-input i{
+    position: absolute;
+    left: 1.5rem;
+    top: 2.7rem;
+    color: #777;
+    cursor: pointer;
+}
+
+/* btn-login */
+#btnSign , #btnLogin{
+    background: #d50032;
+    color: #fff;
+    padding: 1rem;
+    max-width: 100%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+#btnSign p, #btnLogin p{
+    text-align: center;
+}
+#btnSign:hover , #btnLogin:hover{
+    background: #cf2e2e;
+}
+
+/* modal-error-success */
+.modal-error-success{
+    background: #d50032;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    padding: 1rem;
+    max-width: 24rem;
+    position: absolute;
+    top: 6rem;
+    right: -30rem;
+    border-radius: 13px;
+    box-shadow: 5px 1px 23px #999;
+    z-index: 11;
+    position: fixed;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+}
+.modal-error-success.active-modal-error-success{
+    right: 1rem;
+}
+.titele-result{
+    margin-left: 3rem;
+}
+.titele-result p{
+    font-size: 15px;
+}
+.icon-close i{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.btn-send-login-sign{
+    display: flex;
+    margin-top: 1.5rem;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    color: #777;
+}
+.btn-send-login-sign p a{
+    margin-right: .5rem;
+}
+
+/* ----------------responsive-----------------*/
+@media only screen and (max-width: 998px) {
+    .box-img-login{
+        display: none;
+    }
+    .box-login-signin{
+        width: 100%;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+}
+}
+@media only screen and (max-width: 520px) {
+    .box-login-signin{
+        padding: 10px 20px 10px 20px;
+    }
+}

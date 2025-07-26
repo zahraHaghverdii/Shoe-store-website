@@ -1,0 +1,390 @@
+.main{
+  position: relative;
+  top: 4rem;
+}
+.header {
+  background: var(--color1);
+  color: var(--color3);
+  position: fixed;
+  z-index: 11;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  padding: 0 1rem;
+}
+/* hamburger */
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background: var(--color3);
+  margin: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.hamburger {
+  cursor: pointer;
+  display: none;
+}
+/* logo */
+.navbar .logo {
+  max-width: 6rem;
+}
+/* menu */
+.navbar .menu .menu-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .menu ul li a {
+  color: var(--color3);
+  transition: all 0.5s ease-in-out;
+}
+.navbar .menu ul li a:hover,
+.navbar .menu ul li .activeMenu {
+  color:#707070;
+}
+.navbar .menu ul li {
+  margin: 0 1.5rem;
+  font-size: 18px;
+}
+.responsive-item {
+  display: none;
+}
+/* btn-header */
+.header .btn-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .btn-header a {
+  color: var(--color3);
+  margin: 0 1rem;
+  font-size: 1.6rem;
+  transition: all 0.5s ease-in-out;
+}
+.header .btn-header a:hover {
+  color: #707070;
+}
+
+
+
+/* //////////secton-box-cadr-products/////////// */
+.btn-cart{
+  position: relative;
+  cursor: pointer;
+  color: #707070;
+}
+#cartProductIcon .fa-shopping-cart{
+  font-size: 2rem;
+  position: relative;
+}
+.numberProduct{
+    position: absolute;
+    top: 0.2rem;
+    right: -8px;
+    background: var(--color5);
+    color: var(--color1);
+    width: 1.2rem;
+    height: 1.2rem;
+    text-align: center;
+    border-radius: 50px;
+    line-height: 1.5;
+    font-size: 13px;
+}
+.secton-box-cadr-products{
+  background: var(--color1);
+  position: absolute;
+  left: 1rem;
+  width: 28rem;
+  top: 5rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  display: none;
+}
+.secton-box-cadr-products.activeSectonBoxCadrProducts{
+  display: flex;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+}
+/* section-box-cadr-product */
+.section-box-cadr-product{
+  width: 100%;
+}
+.box-cart-caret-up{
+  position: absolute;
+  top: -1.3rem;
+  left: 0.5rem;
+}
+.box-cart-caret-up .fa-caret-up{
+  font-size: 2rem;
+  color: var(--color1);
+}
+.header-box-cadr-products , .box-total{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem 1rem;
+}
+.total span , .total small{
+  color: var(--color5);
+  font-weight: 600
+}
+/* number-product-box-cadr */
+.number-product-box-cadr span , .getProduct{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.number-product-box-cadr span small{
+  margin-left: .5rem;
+  font-size: 1.2rem;
+}
+.number-product-box-cadr span {
+  color: #666;
+}
+/* getProduct */
+.getProduct p a{
+  font-size: 13px;
+  margin-left: .5rem;
+  color: var(--color5);
+}
+.getProduct i{
+  color: var(--color5);
+}
+/* btnRemove-all */
+#btnRemove-all{
+  font-size: 13px;
+  width: 7rem;
+  border-radius: 7px;
+  padding: 0.5rem;
+}
+#btnRemove-all:hover a{
+  color: var(--color5);
+}
+
+/* ==============box-cadr-products============ */
+.box-cadr-products{
+  padding: 1rem;
+  margin: 2rem auto;
+  overflow-y: scroll;
+  height: 200px;
+}
+.box-cadr-products::-webkit-scrollbar {
+  background-color:#fff;
+  width: 5px;
+  height: 15px;
+}
+.box-cadr-products::-webkit-scrollbar-thumb {
+  height: 20px;
+  background-color: var(--color6);
+}
+.box-cadr-products li{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+.box-cadr-products li .box-img-new-item{
+  max-width: 4rem;
+}
+/* box-name-price */
+.box-name-price{
+  display: block;
+  width: 70%;
+  line-height: 2;
+}
+.box-cadr-products li p{
+  font-size: 14px;
+}
+.priceBoxItem{
+  display: flex;
+  align-items: center;
+}
+.priceBoxItem .priceItem{
+  margin-left: .5rem;
+  color: #333;
+  font-weight: 500;
+}
+.priceBoxItem small{
+  color: #707070;
+}
+.box-cadr-products i{
+  display: block;
+  text-align: center;
+  font-size: 6rem;
+  margin-top: 0.5rem;
+  color: #8888882e;
+}
+.box-cadr-products h3{
+  text-align: center;
+  color: #888888bf;
+}
+/* btn-minus-plus */
+.btn-minus-plus{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.button-plus , .button-minus{
+  background: #f1f1f1;
+  color: #707070;
+  width: 1.2rem;
+  height: 1.2rem;
+  line-height: 1.4;
+  text-align: center;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/* =============dropdown-login-signin============== */
+.btn-login{
+  cursor: pointer;
+  color: #707070;
+}
+.btn-login-icon{
+  margin-left: 1.5rem;
+  font-size: 1.5rem;
+  position: relative;
+}
+.dropdown-login-signin {
+  background: var(--color6);
+  position: absolute;
+  width: 7rem;
+  display: grid;
+  top: 4.8rem;
+  left: 3.5rem;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 9px;
+  display: none;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.dropdown-login-signin.dropdownLoginSigninActive{
+  display: grid;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+}
+.dropdown-login-signin a {
+  padding: 0.5rem 0;
+  text-align: center;
+  border-bottom: 1px solid #b3c7df;
+  color: #fff;
+  font-size: 12px;
+}
+.dropdown-login-signin a:nth-child(3) {
+  border-bottom: none;
+}
+.box-login-signin-caret-up .fa-caret-up{
+  position: absolute;
+  left: .8rem;
+  top: -1rem;
+  font-size: 1.5rem;
+  color: var(--color6);
+}
+
+/* ----------------responsive-----------------*/
+@media only screen and (max-width: 760px) {
+  /*navbar */
+  .navbar {
+    padding: 1rem;
+  }
+  /* menu */
+  .navbar .menu .menu-link {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .menu-link {
+    background: #f6f6f6c2;
+    box-shadow: 2px 6px 10px #b5b5b5;
+    backdrop-filter: blur(4px);
+    position: absolute;
+    right: -350px;
+    top: 0;
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    flex-direction: column;
+    transition: all 1s ease-out;
+    color: var(--color3);
+    padding: 5rem 0;
+    z-index: 1;
+  }
+  .menu-link.open {
+    right: 0;
+    width: 245px;
+  }
+  .navbar .menu ul li {
+    margin: 1rem 0;
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .activeMenu, .navbar .menu ul li .activeMenu{
+    color: #333;
+    background: var(--color4);
+  }
+  .responsive-item {
+    display: flex;
+  }
+  .header .btn-header {
+    display: none;
+  }
+  .navbar .logo {
+    max-width: 6rem;
+    left: 1rem;
+    position: absolute;
+  }
+  /* hamburger */
+  .hamburger {
+    display: block;
+    z-index: 5;
+  }
+  .toggle .bars1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+    -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+    -moz-transform: rotate(-45deg) translate(-5px, 6px);
+    -ms-transform: rotate(-45deg) translate(-5px, 6px);
+    -o-transform: rotate(-45deg) translate(-5px, 6px);
+    background-color: var(--color3);
+}
+  .toggle .bars2 {
+    transition: all 0s ease;
+    width: 0;
+  }
+  .toggle .bars3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+    -webkit-transform: rotate(45deg) translate(-5px, -6px);
+    -moz-transform: rotate(45deg) translate(-5px, -6px);
+    -ms-transform: rotate(45deg) translate(-5px, -6px);
+    -o-transform: rotate(45deg) translate(-5px, -6px);
+    background-color: var(--color3);
+}
+}
