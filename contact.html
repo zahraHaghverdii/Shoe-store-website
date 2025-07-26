@@ -1,257 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- --fav icon -- -->
-    <link rel="shortcut icon" type="img/png" href="./img/logo/logo.png">
+    <link rel="shortcut icon" type="img/png" href="./img/logo/logo.png" />
     <!-- --font icon-- -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- --slider-- -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
 
     <!-- --stayle-- -->
-    <link rel="stylesheet" href="./css/stayle.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/contact.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/stayle.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
     <title>تماس ما</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- header -->
     <div class="header">
-        <div class="navbar">
-            <div class="hamburger">
-                <div class="bars1"></div>
-                <div class="bars2"></div>
-                <div class="bars3"></div>
-            </div>
-            <div class="logo">
-                <a href="./index.html"><img src="./img/logo/NIKE.png" alt="logo"></a>
-            </div>
-            <div class="menu">
-                <ul class="menu-link">
-                    <li><a href="./index.html">صفحه اصلی</a></li>
-                    <li class="activeMenu"><a href="./contact.html" class="activeMenu">تماس با ما</a></li>
-                    <li><a href="./about.html">درباره ما</a></li>
-                    <li><a href="./page-product.html">محصولات</a></li>
-                    <li class="responsive-item"><a href="./cart-product.html">سبد خرید</a></li>
-                    <li class="responsive-item"><a href="./login.html">ورود / ثبت نام</a></li>
-                </ul>
-            </div>
-            <div class="btn-header">
-                <div class="btn-login">
-                    <div class="btn-login-icon">
-                        <i class="fa fa-user-circle"></i>
-                    </div>
-                </div>
-                <div class="btn-cart">
-                    <div id="cartProductIcon">
-                        <i class="fa fa-shopping-cart"></i>
-                    </div>
-                    <div class="number-product-cart">
-                        <span id="numberProduct" class="numberProduct">0</span>
-                    </div>
-                </div>
-            </div>
+      <div class="navbar">
+        <div class="hamburger">
+          <div class="bars1"></div>
+          <div class="bars2"></div>
+          <div class="bars3"></div>
         </div>
+        <div class="logo">
+          <a href="./index.html"
+            ><img src="./img/logo/NIKE.png" alt="logo"
+          /></a>
+        </div>
+        <div class="menu">
+          <ul class="menu-link">
+            <li><a href="./index.html">صفحه اصلی</a></li>
+            <li class="activeMenu">
+              <a href="./contact.html" class="activeMenu">تماس با ما</a>
+            </li>
+            <li><a href="./about.html">درباره ما</a></li>
+            <li><a href="./page-product.html">محصولات</a></li>
+            <li class="responsive-item">
+              <a href="./cart-page.html">سبد خرید</a>
+            </li>
+            <li class="responsive-item">
+              <a href="./login.html">ورود / ثبت نام</a>
+            </li>
+          </ul>
+        </div>
+        <div class="btn-header">
+          <div class="btn-login">
+            <div class="btn-login-icon">
+              <i class="fa fa-user-circle"></i>
+            </div>
+          </div>
+          <div class="btn-cart">
+            <div id="cartProductIcon">
+              <i class="fa fa-shopping-cart"></i>
+            </div>
+            <div class="number-product-cart">
+              <span id="numberProduct" class="numberProduct">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <!-- dropdown-login-signin -->
-        <div class="dropdown-login-signin">
-            <div class="box-login-signin-caret-up"><i class="fa fa-caret-up"></i></div>
-            <a href="./login.html">ورود</a>
-            <a href="./signin.html">عضویت</a>
+      <!-- dropdown-login-signin -->
+      <div class="dropdown-login-signin">
+        <div class="box-login-signin-caret-up">
+          <i class="fa fa-caret-up"></i>
         </div>
+        <a href="./login.html">ورود</a>
+        <a href="./signin.html">عضویت</a>
+      </div>
 
-        <!-- box-cadr-products -->
-        <div class="secton-box-cadr-products">
-            <div class="section-box-cadr-product">
-                <div class="box-cart-caret-up"><i class="fa fa-caret-up"></i></div>
-                <div class="header-box-cadr-products">
-                    <div class="number-product-box-cadr">
-                        <span>
-                            <small class="numberProductBoxCadr" id="numberProductBoxCadr">0</small>
-                            <p>کالا</p>
-                        </span>
-                    </div>
-                    <div class="getProduct">
-                        <p><a href="./cart-page.html">مشاهده سبد خرید</a></p>
-                        <i class="	fa fa-angle-left"></i>
-                    </div>
-                </div>
-                <div class="box-cadr-products" id="boxCadrProducts">
-                </div>
-                <div class="box-total" id="boxTotal">
-                    <div class="total">
-                        <h4>مجموع</h4>
-                        <span id="total">0.0</span> <small>تومان</small>
-                    </div>
-                    <div class="btn" id="btnRemove-all"><a href="./cart-page.html">ادامه خرید</a></div>
-                </div>
+      <!-- box-cadr-products -->
+      <div class="secton-box-cadr-products">
+        <div class="section-box-cadr-product">
+          <div class="box-cart-caret-up"><i class="fa fa-caret-up"></i></div>
+          <div class="header-box-cadr-products">
+            <div class="number-product-box-cadr">
+              <span>
+                <small class="numberProductBoxCadr" id="numberProductBoxCadr"
+                  >0</small
+                >
+                <p>کالا</p>
+              </span>
             </div>
+            <div class="getProduct">
+              <p><a href="./cart-page.html">مشاهده سبد خرید</a></p>
+              <i class="fa fa-angle-left"></i>
+            </div>
+          </div>
+          <div class="box-cadr-products" id="boxCadrProducts"></div>
+          <div class="box-total" id="boxTotal">
+            <div class="total">
+              <h4>مجموع</h4>
+              <span id="total">0.0</span> <small>تومان</small>
+            </div>
+            <div class="btn" id="btnRemove-all">
+              <a href="./cart-page.html">ادامه خرید</a>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-
 
     <!-- main -->
     <div class="main">
-        <div class="container">
-            <div class="section-map">
-                <div class="titele-map">
-                    <h2>تماس با NIKE</h2>
-                    <p>
-                        برای ارتباط با فروشگاه اینترنتی ما می توانید از راه های ارتباطی زیر استفاده کنید.
-                    </p>
-                </div>
+      <div class="container">
+        <div class="section-map">
+          <div class="titele-map">
+            <h2>تماس با NIKE</h2>
+            <p>
+              برای ارتباط با فروشگاه اینترنتی ما می توانید از راه های ارتباطی
+              زیر استفاده کنید.
+            </p>
+          </div>
 
-                <div class="map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.485814068975!2d51.04008321471259!3d35.68966083711803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8ded12f5124a71%3A0x537fcf12802436cb!2z2K_Yp9mG2LTar9in2Ycg2b7bjNin2YUg2YbZiNixINmF2LHaqdiyINi02YfYsduM2KfYsQ!5e0!3m2!1snl!2s!4v1680085345408!5m2!1snl!2s"
-                        width="100%" height="450" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.485814068975!2d51.04008321471259!3d35.68966083711803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8ded12f5124a71%3A0x537fcf12802436cb!2z2K_Yp9mG2LTar9in2Ycg2b7bjNin2YUg2YbZiNixINmF2LHaqdiyINi02YfYsduM2KfYsQ!5e0!3m2!1snl!2s!4v1680085345408!5m2!1snl!2s"
+              width="100%"
+              height="450"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
 
-                <div class="section-container">
-                    <ul class="box-container">
-                        <li class="item">
-                            <i class="fa fa-phone"></i>
-                            <b>شماره تلفن</b>
-                            <a href="tel:0123456789">0123456789</a>
-                        </li>
-                        <li class="item">
-                            <i class="	fa fa-envelope"></i>
-                            <b>ایمیل ما</b>
-                            <a href="mahdiMoradi@mellishoes.ir">mahdiMoradi@mellishoes.ir</a>
-                        </li>
-                        <li class="item">
-                            <i class="	fa fa-clock-o"></i>
-                            <b>ساعت کاری</b>
-                            <p>شنبه تا چهارشنبه ساعت 9 الی 12</p>
-                        </li>
-                        <li class="item">
-                            <i class="fa fa-map-marker"></i>
-                            <b>ادرس مجموعه</b>
-                            <a
-                                href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.485814068975!2d51.04008321471259!3d35.68966083711803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8ded12f5124a71%3A0x537fcf12802436cb!2z2K_Yp9mG2LTar9in2Ycg2b7bjNin2YUg2YbZiNixINmF2LHaqdiyINi02YfYsduM2KfYsQ!5e0!3m2!1snl!2s!4v1680085345408!5m2!1snl!2s">تهران
-                                - شهریار - دانشگاه پیام نور شهریار
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+          <div class="section-container">
+            <ul class="box-container">
+              <li class="item">
+                <i class="fa fa-phone"></i>
+                <b>شماره تلفن</b>
+                <a href="tel:0123456789">0123456789</a>
+              </li>
+              <li class="item">
+                <i class="fa fa-envelope"></i>
+                <b>ایمیل ما</b>
+                <a href="haghverdiizahraa@gmail.com"
+                  >haghverdiizahraa@gmail.com</a
+                >
+              </li>
+              <li class="item">
+                <i class="fa fa-clock-o"></i>
+                <b>ساعت کاری</b>
+                <p>شنبه تا چهارشنبه ساعت 9 الی 12</p>
+              </li>
+              <li class="item">
+                <i class="fa fa-map-marker"></i>
+                <b>ادرس مجموعه</b>
+                <a
+                  href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.485814068975!2d51.04008321471259!3d35.68966083711803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8ded12f5124a71%3A0x537fcf12802436cb!2z2K_Yp9mG2LTar9in2Ycg2b7bjNin2YUg2YbZiNixINmF2LHaqdiyINi02YfYsduM2KfYsQ!5e0!3m2!1snl!2s!4v1680085345408!5m2!1snl!2s"
+                  >تهران - شهریار - دانشگاه پیام نور شهریار
+                </a>
+              </li>
+            </ul>
+          </div>
 
-                <div class="section-form">
-                    <h2>فرم تماس با ما</h2>
-                    <p>
-                        لطفاً پیش از ارسال ایمیل یا تماس تلفنی، ابتدا پرسش های متداول را مشاهده کنید. اگر پاسخ خود را
-                        دریافت نکرده اید لطفا فرم زیر را تکمیل و ارسال کنید تا همکاران ما در اسرع وقت با شما تماس
-                        بگیرند.
-                    </p>
-                    <div class="box-form">
-                        <form method="post">
-                            <div class="box-input">
-                                <label>نام و نام خانوادگی <small>*</small></label>
-                                <input type="text" placeholder="نام و نام خانوادگی را وارد کنید">
-                            </div>
-                            <div class="box-input">
-                                <label>ایمیل <small>*</small></label>
-                                <input type="email" placeholder="ایمیل خود را وارد کنید">
-                            </div>
-                            <div class="box-input">
-                                <label>شماره تلفن<small>*</small></label>
-                                <input type="text" placeholder="شماره تلفن خود را وارد کنید">
-                            </div>
-                            <div class="box-input">
-                                <label>متن دیدگاه<small>*</small></label>
-                                <textarea name="متن دیدگاه" id="input-textarea" cols="30" rows="10"
-                                    placeholder="دیدگاه خود را وارد کنید"></textarea>
-                            </div>
-                        </form>
-                        <div class="btn  btn-add-product" id="sendMassage">
-                            <p>ارسال پیام</p>
-                        </div>
-                    </div>
+          <div class="section-form">
+            <h2>فرم تماس با ما</h2>
+            <p>
+              لطفاً پیش از ارسال ایمیل یا تماس تلفنی، ابتدا پرسش های متداول را
+              مشاهده کنید. اگر پاسخ خود را دریافت نکرده اید لطفا فرم زیر را
+              تکمیل و ارسال کنید تا همکاران ما در اسرع وقت با شما تماس بگیرند.
+            </p>
+            <div class="box-form">
+              <form method="post">
+                <div class="box-input">
+                  <label>نام و نام خانوادگی <small>*</small></label>
+                  <input
+                    type="text"
+                    placeholder="نام و نام خانوادگی را وارد کنید"
+                  />
                 </div>
+                <div class="box-input">
+                  <label>ایمیل <small>*</small></label>
+                  <input type="email" placeholder="ایمیل خود را وارد کنید" />
+                </div>
+                <div class="box-input">
+                  <label>شماره تلفن<small>*</small></label>
+                  <input
+                    type="text"
+                    placeholder="شماره تلفن خود را وارد کنید"
+                  />
+                </div>
+                <div class="box-input">
+                  <label>متن دیدگاه<small>*</small></label>
+                  <textarea
+                    name="متن دیدگاه"
+                    id="input-textarea"
+                    cols="30"
+                    rows="10"
+                    placeholder="دیدگاه خود را وارد کنید"
+                  ></textarea>
+                </div>
+              </form>
+              <div class="btn btn-add-product" id="sendMassage">
+                <p>ارسال پیام</p>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-
-
 
     <!-- footer -->
     <div class="footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-logo">
-                    <div class="logo">
-                        <img src="./img/logo/NIKE-FFF.png" alt="">
-                    </div>
-                </div>
-                <div class="footr-menu">
-                    <ul class="footer-menu2">
-                        <h3>ارتباط با ما</h3>
-                        <li><i class="fa fa-caret-left"></i><a href="./about.html">درباره ما</a>
-                        </li>
-                        <li><i class="	fa fa-caret-left activeFooter"></i><a href="./contact.html"
-                                class="activeFooter">تماس با ما</a></li>
-                        <li><i class="	fa fa-caret-left"></i><a href="./cart-product.html">سبد خرید</a></li>
-                        <li><i class="	fa fa-caret-left"></i><a href="./login.html">ورود / عضویت</a></li>
-                    </ul>
-                    <ul class="footer-menu1">
-                        <h3>دسترسی سریع</h3>
-                        <li><i class="	fa fa-caret-left "></i><a href="./index.html">صفحه
-                                اصلی</a></li>
-                        <li><i class="	fa fa-caret-left"></i><a href="./page-product.html">مردانه</a></li>
-                        <li><i class="	fa fa-caret-left"></i><a href="./page-product.html">زنانه</a></li>
-                        <li><i class="	fa fa-caret-left"></i><a href="./page-product.html">محصولات ما</a></li>
-                    </ul>
-                    <ul class="footer-menu3">
-                        <h3>نشانی ما</h3>
-                        <li>
-                            <i class="fa fa-phone"></i>
-                            <p>شماره تماس : <a href="tel:0123456789"><span>0123456789</span></a></p>
-                        </li>
-                        <li>
-                            <i class="	fa fa-map-marker"></i>
-                            <p>
-                                تهران - شهریار - دانشگاه پیام نور شهریار
-                            </p>
-                        </li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-logo">
+            <div class="logo">
+              <img src="./img/logo/NIKE-FFF.png" alt="" />
             </div>
-            <div class="footer-icon">
-                <ul>
-                    <li><a href="./"><i class="fa fa-paper-plane-o"></i></a></li>
-                    <li><a href="./"><i class="	fa fa-whatsapp"></i></a></li>
-                    <li><a href="./"><i class="	fa fa-instagram"></i></a></li>
-                </ul>
-            </div>
+          </div>
+          <div class="footr-menu">
+            <ul class="footer-menu2">
+              <h3>ارتباط با ما</h3>
+              <li>
+                <i class="fa fa-caret-left"></i
+                ><a href="./about.html">درباره ما</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-left activeFooter"></i
+                ><a href="./contact.html" class="activeFooter">تماس با ما</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-left"></i
+                ><a href="./cart-product.html">سبد خرید</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-left"></i
+                ><a href="./login.html">ورود / عضویت</a>
+              </li>
+            </ul>
+            <ul class="footer-menu1">
+              <h3>دسترسی سریع</h3>
+              <li>
+                <i class="fa fa-caret-left"></i
+                ><a href="./index.html">صفحه اصلی</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-left"></i
+                ><a href="./page-product.html">مردانه</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-left"></i
+                ><a href="./page-product.html">زنانه</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-left"></i
+                ><a href="./page-product.html">محصولات ما</a>
+              </li>
+            </ul>
+            <ul class="footer-menu3">
+              <h3>نشانی ما</h3>
+              <li>
+                <i class="fa fa-phone"></i>
+                <p>
+                  شماره تماس :
+                  <a href="tel:0123456789"><span>0123456789</span></a>
+                </p>
+              </li>
+              <li>
+                <i class="fa fa-map-marker"></i>
+                <p>تهران - شهریار - دانشگاه پیام نور شهریار</p>
+              </li>
+            </ul>
+          </div>
         </div>
+        <div class="footer-icon">
+          <ul>
+            <li>
+              <a href="./"><i class="fa fa-paper-plane-o"></i></a>
+            </li>
+            <li>
+              <a href="./"><i class="fa fa-whatsapp"></i></a>
+            </li>
+            <li>
+              <a href="./"><i class="fa fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-
 
     <!-- modal-product-add-remove -->
     <div class="modal-product-add-remove">
-        <div class="header-modal">
-            <h2>سبد خرید</h2>
-            <i class="fa fa-times-circle-o" id="closeModal"></i>
+      <div class="header-modal">
+        <h2>سبد خرید</h2>
+        <i class="fa fa-times-circle-o" id="closeModal"></i>
+      </div>
+      <div class="body-modal">
+        <p class="result-modal"></p>
+      </div>
+      <div class="footer-modal">
+        <div class="btn continue-shopping" id="continue-shopping">
+          ادامه خرید
         </div>
-        <div class="body-modal">
-            <p class="result-modal"></p>
-        </div>
-        <div class="footer-modal">
-            <div class="btn continue-shopping" id="continue-shopping">ادامه خرید</div>
-            <div class="btn payment" id="payment">تایید و پرداخت</div>
-        </div>
+        <div class="btn payment" id="payment">تایید و پرداخت</div>
+      </div>
     </div>
 
     <!-- coverBody -->
     <div id="coverBody"></div>
-
 
     <!-- --------------------javascript---------------- -->
     <!-- --slider-- -->
@@ -260,6 +320,5 @@
     <!-- --js-- -->
     <script src="./js/header.js"></script>
     <script src="./js/index.js"></script>
-</body>
-
+  </body>
 </html>
