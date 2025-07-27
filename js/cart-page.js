@@ -4,7 +4,7 @@ let totalProducts = document.querySelector("#totalProducts")
 function updateShoppingitemCartProduct() {
   if (dataArryProduct.length > 0) {
    let ItemAddProductCartPage = dataArryProduct.map(cadrProduct =>{
-    console.log(cadrProduct.price);
+    // console.log(cadrProduct.price);
       return `
       <li class="new-item-product" id="${cadrProduct.id}">
       <div class="box-img-new-item"><img src="${cadrProduct.img}" alt=""></div>

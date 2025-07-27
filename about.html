@@ -1,248 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- --fav icon -- -->
-    <link rel="shortcut icon" type="img/png" href="./img/logo/logo.png">
+    <link rel="shortcut icon" type="img/png" href="./img/logo/logo.png" />
     <!-- --font icon-- -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- --slider-- -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
 
     <!-- --stayle-- -->
-    <link rel="stylesheet" href="./css/stayle.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/about.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/stayle.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
     <title>درباره ما</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- header -->
     <div class="header">
-        <div class="navbar">
-            <div class="hamburger">
-                <div class="bars1"></div>
-                <div class="bars2"></div>
-                <div class="bars3"></div>
-            </div>
-            <div class="logo">
-                <a href="./index.html"><img src="./img/logo/NIKE.png" alt="logo"></a>
-            </div>
-            <div class="menu">
-                <ul class="menu-link">
-                    <li><a href="./index.html">صفحه اصلی</a></li>
-                    <li><a href="./contact.html">تماس با ما</a></li>
-                    <li class="activeMenu"><a href="./about.html" class="activeMenu">درباره ما</a></li>
-                    <li><a href="./page-product.html">محصولات</a></li>
-                    <li class="responsive-item"><a href="./cart-page.html">سبد خرید</a></li>
-                    <li class="responsive-item"><a href="./login.html">ورود / ثبت نام</a></li>
-                </ul>
-            </div>
-            <div class="btn-header">
-                <div class="btn-login">
-                    <div class="btn-login-icon">
-                        <i class="fa fa-user-circle"></i>
-                    </div>
-                </div>
-                <div class="btn-cart">
-                    <div id="cartProductIcon">
-                        <i class="fa fa-shopping-cart"></i>
-                    </div>
-                    <div class="number-product-cart">
-                        <span id="numberProduct" class="numberProduct">0</span>
-                    </div>
-                </div>
-            </div>
+      <div class="navbar">
+        <div class="hamburger">
+          <div class="bars1"></div>
+          <div class="bars2"></div>
+          <div class="bars3"></div>
         </div>
+        <div class="logo">
+          <a href="./index.html"
+            ><img src="./img/logo/NIKE.png" alt="logo"
+          /></a>
+        </div>
+        <div class="menu">
+          <ul class="menu-link">
+            <li><a href="./index.html">صفحه اصلی</a></li>
+            <li><a href="./contact.html">تماس با ما</a></li>
+            <li class="activeMenu">
+              <a href="./about.html" class="activeMenu">درباره ما</a>
+            </li>
+            <li><a href="./page-product.html">محصولات</a></li>
+            <li class="responsive-item">
+              <a href="./cart-page.html">سبد خرید</a>
+            </li>
+            <li class="responsive-item">
+              <a href="./login.html">ورود / ثبت نام</a>
+            </li>
+          </ul>
+        </div>
+        <div class="btn-header">
+          <div class="btn-login">
+            <div class="btn-login-icon">
+              <i class="fa fa-user-circle"></i>
+            </div>
+          </div>
+          <div class="btn-cart">
+            <div id="cartProductIcon">
+              <i class="fa fa-shopping-cart"></i>
+            </div>
+            <div class="number-product-cart">
+              <span id="numberProduct" class="numberProduct">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <!-- dropdown-login-signin -->
-        <div class="dropdown-login-signin">
-            <div class="box-login-signin-caret-up"><i class="fa fa-caret-up"></i></div>
-            <a href="./login.html">ورود</a>
-            <a href="./signin.html">عضویت</a>
+      <!-- dropdown-login-signin -->
+      <div class="dropdown-login-signin">
+        <div class="box-login-signin-caret-up">
+          <i class="fa fa-caret-up"></i>
         </div>
+        <a href="./login.html">ورود</a>
+        <a href="./signin.html">عضویت</a>
+      </div>
 
-        <!-- box-cadr-products -->
-        <div class="secton-box-cadr-products">
-            <div class="section-box-cadr-product">
-                <div class="box-cart-caret-up"><i class="fa fa-caret-up"></i></div>
-                <div class="header-box-cadr-products">
-                    <div class="number-product-box-cadr">
-                        <span>
-                            <small class="numberProductBoxCadr" id="numberProductBoxCadr">0</small>
-                            <p>کالا</p>
-                        </span>
-                    </div>
-                    <div class="getProduct">
-                        <p><a href="./cart-page.html">مشاهده سبد خرید</a></p>
-                        <i class="	fa fa-angle-left"></i>
-                    </div>
-                </div>
-                <div class="box-cadr-products" id="boxCadrProducts">
-                </div>
-                <div class="box-total" id="boxTotal">
-                    <div class="total">
-                        <h4>مجموع</h4>
-                        <span id="total">0.0</span> <small>تومان</small>
-                    </div>
-                    <div class="btn" id="btnRemove-all"><a href="./cart-page.html">ادامه خرید</a></div>
-                </div>
+      <!-- box-cadr-products -->
+      <div class="secton-box-cadr-products">
+        <div class="section-box-cadr-product">
+          <div class="box-cart-caret-up"><i class="fa fa-caret-up"></i></div>
+          <div class="header-box-cadr-products">
+            <div class="number-product-box-cadr">
+              <span>
+                <small class="numberProductBoxCadr" id="numberProductBoxCadr"
+                  >0</small
+                >
+                <p>کالا</p>
+              </span>
             </div>
+            <div class="getProduct">
+              <p><a href="./cart-page.html">مشاهده سبد خرید</a></p>
+              <i class="fa fa-angle-left"></i>
+            </div>
+          </div>
+          <div class="box-cadr-products" id="boxCadrProducts"></div>
+          <div class="box-total" id="boxTotal">
+            <div class="total">
+              <h4>مجموع</h4>
+              <span id="total">0.0</span> <small>تومان</small>
+            </div>
+            <div class="btn" id="btnRemove-all">
+              <a href="./about.html">ادامه خرید</a>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-
 
     <!-- main -->
     <div class="main">
-        <video autoplay loop="true" width="100%">
-            <source type="video/mp4"
-                src="https://www.famousfootwear.com/-/media/project/tenant/famous-footwear/famous-footwear/misc-landing-pages/about-us-lp/aboutus_2400.mp4">
-        </video>
+      <video autoplay loop="true" width="100%">
+        <source
+          type="video/mp4"
+          src="https://www.famousfootwear.com/-/media/project/tenant/famous-footwear/famous-footwear/misc-landing-pages/about-us-lp/aboutus_2400.mp4"
+        />
+      </video>
 
-        <div class="section-aboute-main">
-            <div class="titele-about">
-                <h1>آنچه برای ما مهم است</h1>
-            </div>
-
-            <div class="container">
-                <!-- section-part1 -->
-                <div class="section-part1">
-                    <div class="box-part1">
-                        <div class="img-part1">
-                            <img src="./img/about/about_us_our_people_1.avif" alt="">
-                        </div>
-                        <div class="text-part1">
-                            <h2>کاربران ما</h2>
-                            <p>
-                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                                است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
-                                فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- section-part1 -->
-                <div class="section-part2">
-                    <div class="box-part2">
-                        <div class="text-part2">
-                            <h2>تلاش آگاهانه محیط زیست ما</h2>
-                            <p>
-                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                                است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
-                                فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
-                            </p>
-                        </div>
-                        <div class="img-part2">
-                            <img src="./img/about/about_us_eco_effort.avif" alt="">
-                        </div>
-                    </div>
-                </div>
-                <!-- service -->
-                <div class="section-servise">
-                    <div class="container">
-                        <ul class="servise">
-                            <li class="item-service">
-                                <img src="https://mellishoes.ir/wp-content/uploads/2022/08/group.svg" alt="service">
-                                <p>تحویل سریع</p>
-                            </li>
-                            <li class="item-service">
-                                <img src="https://mellishoes.ir/wp-content/uploads/2022/08/routing.svg" alt="service">
-                                <p>ارسال به سراسر کشور</p>
-                            </li>
-                            <li class="item-service">
-                                <img src="https://mellishoes.ir/wp-content/uploads/2022/08/star.svg" alt="service">
-                                <p>خدمات پس از فروش</p>
-                            </li>
-                            <li class="item-service">
-                                <img src="https://mellishoes.ir/wp-content/uploads/2022/08/convert-3d-cube.svg"
-                                    alt="service">
-                                <p>ضمانت تعویض</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      <div class="section-aboute-main">
+        <div class="titele-about">
+          <h1>آنچه برای ما مهم است</h1>
         </div>
+
+        <div class="container">
+          <!-- section-part1 -->
+          <div class="section-part1">
+            <div class="box-part1">
+              <div class="img-part1">
+                <img src="./img/about/about_us_our_people_1.avif" alt="" />
+              </div>
+              <div class="text-part1">
+                <h2>کاربران ما</h2>
+                <p>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                  تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                  کاربردی می باشد.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- section-part1 -->
+          <div class="section-part2">
+            <div class="box-part2">
+              <div class="text-part2">
+                <h2>تلاش آگاهانه محیط زیست ما</h2>
+                <p>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                  تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                  کاربردی می باشد.
+                </p>
+              </div>
+              <div class="img-part2">
+                <img src="./img/about/about_us_eco_effort.avif" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- service -->
+          <div class="section-servise">
+            <div class="container">
+              <ul class="servise">
+                <li class="item-service">
+                  <img
+                    src="https://mellishoes.ir/wp-content/uploads/2022/08/group.svg"
+                    alt="service"
+                  />
+                  <p>تحویل سریع</p>
+                </li>
+                <li class="item-service">
+                  <img
+                    src="https://mellishoes.ir/wp-content/uploads/2022/08/routing.svg"
+                    alt="service"
+                  />
+                  <p>ارسال به سراسر کشور</p>
+                </li>
+                <li class="item-service">
+                  <img
+                    src="https://mellishoes.ir/wp-content/uploads/2022/08/star.svg"
+                    alt="service"
+                  />
+                  <p>خدمات پس از فروش</p>
+                </li>
+                <li class="item-service">
+                  <img
+                    src="https://mellishoes.ir/wp-content/uploads/2022/08/convert-3d-cube.svg"
+                    alt="service"
+                  />
+                  <p>ضمانت تعویض</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-
 
     <!-- footer -->
     <div class="footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-logo">
-                    <div class="logo">
-                        <img src="./img/logo/NIKE-FFF.png" alt="">
-                    </div>
-                </div>
-                <div class="footr-menu">
-                    <ul class="footer-menu2">
-                        <h3>ارتباط با ما</h3>
-                        <li><i class="fa fa-caret-left activeFooter"></i><a href="./about.html"
-                                class="activeFooter">درباره ما</a>
-                        </li>
-                        <li><i class="	fa fa-caret-left"></i><a href="./contact.html">تماس با ما</a></li>
-                        <li><i class="	fa fa-caret-left"></i><a href="./cart-product.html">سبد خرید</a></li>
-                        <li><i class="	fa fa-caret-left"></i><a href="./login.html">ورود / عضویت</a></li>
-                    </ul>
-                    <ul class="footer-menu1">
-                        <h3>دسترسی سریع</h3>
-                        <li><i class="	fa fa-caret-left "></i><a href="./index.html">صفحه
-                                اصلی</a></li>
-                        <li><i class="	fa fa-caret-left"></i><a href="./page-product.html">مردانه</a></li>
-                        <li><i class="	fa fa-caret-left"></i><a href="./page-product.html">زنانه</a></li>
-                        <li><i class="	fa fa-caret-left"></i><a href="./page-product.html">محصولات ما</a></li>
-                    </ul>
-                    <ul class="footer-menu3">
-                        <h3>نشانی ما</h3>
-                        <li>
-                            <i class="fa fa-phone"></i>
-                            <p>شماره تماس : <a href="tel:0123456789"><span>0123456789</span></a></p>
-                        </li>
-                        <li>
-                            <i class="	fa fa-map-marker"></i>
-                            <p>
-                                تهران - شهریار - دانشگاه پیام نور شهریار
-                            </p>
-                        </li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-logo">
+            <div class="logo">
+              <img src="./img/logo/NIKE-FFF.png" alt="" />
             </div>
-            <div class="footer-icon">
-                <ul>
-                    <li><a href="./"><i class="fa fa-paper-plane-o"></i></a></li>
-                    <li><a href="./"><i class="	fa fa-whatsapp"></i></a></li>
-                    <li><a href="./"><i class="	fa fa-instagram"></i></a></li>
-                </ul>
-            </div>
+          </div>
+          <div class="footr-menu">
+            <ul class="footer-menu2">
+              <h3>ارتباط با ما</h3>
+              <li>
+                <i class="fa fa-caret-left activeFooter"></i
+                ><a href="./about.html" class="activeFooter">درباره ما</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-left"></i
+                ><a href="./contact.html">تماس با ما</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-left"></i
+                ><a href="./cart-product.html">سبد خرید</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-left"></i
+                ><a href="./login.html">ورود / عضویت</a>
+              </li>
+            </ul>
+            <ul class="footer-menu1">
+              <h3>دسترسی سریع</h3>
+              <li>
+                <i class="fa fa-caret-left"></i
+                ><a href="./index.html">صفحه اصلی</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-left"></i
+                ><a href="./page-product.html">مردانه</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-left"></i
+                ><a href="./page-product.html">زنانه</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-left"></i
+                ><a href="./page-product.html">محصولات ما</a>
+              </li>
+            </ul>
+            <ul class="footer-menu3">
+              <h3>نشانی ما</h3>
+              <li>
+                <i class="fa fa-phone"></i>
+                <p>
+                  شماره تماس :
+                  <a href="tel:0123456789"><span>0123456789</span></a>
+                </p>
+              </li>
+              <li>
+                <i class="fa fa-map-marker"></i>
+                <p>تهران - شهریار - دانشگاه پیام نور شهریار</p>
+              </li>
+            </ul>
+          </div>
         </div>
+        <div class="footer-icon">
+          <ul>
+            <li>
+              <a href="./"><i class="fa fa-paper-plane-o"></i></a>
+            </li>
+            <li>
+              <a href="./"><i class="fa fa-whatsapp"></i></a>
+            </li>
+            <li>
+              <a href="./"><i class="fa fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-
 
     <!-- modal-product-add-remove -->
     <div class="modal-product-add-remove">
-        <div class="header-modal">
-            <h2>سبد خرید</h2>
-            <i class="fa fa-times-circle-o" id="closeModal"></i>
+      <div class="header-modal">
+        <h2>سبد خرید</h2>
+        <i class="fa fa-times-circle-o" id="closeModal"></i>
+      </div>
+      <div class="body-modal">
+        <p class="result-modal"></p>
+      </div>
+      <div class="footer-modal">
+        <div class="btn continue-shopping" id="continue-shopping">
+          ادامه خرید
         </div>
-        <div class="body-modal">
-            <p class="result-modal"></p>
-        </div>
-        <div class="footer-modal">
-            <div class="btn continue-shopping" id="continue-shopping">ادامه خرید</div>
-            <div class="btn payment" id="payment">تایید و پرداخت</div>
-        </div>
+        <div class="btn payment" id="payment">تایید و پرداخت</div>
+      </div>
     </div>
 
     <!-- coverBody -->
     <div id="coverBody"></div>
-
 
     <!-- --------------------javascript---------------- -->
     <!-- --slider-- -->
@@ -251,6 +310,5 @@
     <!-- --js-- -->
     <script src="./js/header.js"></script>
     <script src="./js/index.js"></script>
-</body>
-
+  </body>
 </html>

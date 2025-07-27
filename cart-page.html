@@ -1,132 +1,139 @@
 <!DOCTYPE html>
 <html lang="fa">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- --fav icon -- -->
-    <link rel="shortcut icon" type="img/png" href="./img/logo/logo.png">
+    <link rel="shortcut icon" type="img/png" href="./img/logo/logo.png" />
     <!-- --font icon-- -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- --slider-- -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
 
     <!-- --stayle-- -->
-    <link rel="stylesheet" href="./css/stayle.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/cart-page.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/stayle.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/cart-page.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
 
     <title>تمامی محصولات</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- header -->
     <div class="header">
-        <div class="navbar">
-            <div class="hamburger">
-                <div class="bars1"></div>
-                <div class="bars2"></div>
-                <div class="bars3"></div>
-            </div>
-            <div class="logo">
-                <a href="./index.html"><img src="./img/logo/NIKE.png" alt="logo"></a>
-            </div>
-            <div class="menu">
-                <ul class="menu-link">
-                    <li><a href="./index.html">صفحه اصلی</a></li>
-                    <li><a href="./contact.html">تماس با ما</a></li>
-                    <li><a href="./about.html">درباره ما</a></li>
-                    <li class="activeMenu"><a href="./page-product.html" class="activeMenu">محصولات</a></li>
-                    <li class="responsive-item"><a href="./cart-product.html">سبد خرید</a></li>
-                    <li class="responsive-item"><a href="./login.html">ورود / ثبت نام</a></li>
-                </ul>
-            </div>
-            <div class="btn-header">
-                <div class="btn-login">
-                    <div class="btn-login-icon">
-                        <i class="fa fa-user-circle"></i>
-                    </div>
-                </div>
-                <div class="btn-cart">
-                    <div id="cartProductIcon">
-                        <i class="fa fa-shopping-cart"></i>
-                    </div>
-                    <div class="number-product-cart">
-                        <span id="numberProduct" class="numberProduct">0</span>
-                    </div>
-                </div>
-            </div>
+      <div class="navbar">
+        <div class="hamburger">
+          <div class="bars1"></div>
+          <div class="bars2"></div>
+          <div class="bars3"></div>
         </div>
+        <div class="logo">
+          <a href="./index.html"
+            ><img src="./img/logo/NIKE.png" alt="logo"
+          /></a>
+        </div>
+        <div class="menu">
+          <ul class="menu-link">
+            <li><a href="./index.html">صفحه اصلی</a></li>
+            <li><a href="./contact.html">تماس با ما</a></li>
+            <li><a href="./about.html">درباره ما</a></li>
+            <li class="activeMenu">
+              <a href="./page-product.html" class="activeMenu">محصولات</a>
+            </li>
+            <li class="responsive-item">
+              <a href="./cart-page.html">سبد خرید</a>
+            </li>
+            <li class="responsive-item">
+              <a href="./login.html">ورود / ثبت نام</a>
+            </li>
+          </ul>
+        </div>
+        <div class="btn-header">
+          <div class="btn-login">
+            <div class="btn-login-icon">
+              <i class="fa fa-user-circle"></i>
+            </div>
+          </div>
+          <div class="btn-cart">
+            <div id="cartProductIcon">
+              <i class="fa fa-shopping-cart"></i>
+            </div>
+            <div class="number-product-cart">
+              <span id="numberProduct" class="numberProduct">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <!-- dropdown-login-signin -->
-        <div class="dropdown-login-signin">
-            <div class="box-login-signin-caret-up"><i class="fa fa-caret-up"></i></div>
-            <a href="./login.html">ورود</a>
-            <a href="./signin.html">عضویت</a>
+      <!-- dropdown-login-signin -->
+      <div class="dropdown-login-signin">
+        <div class="box-login-signin-caret-up">
+          <i class="fa fa-caret-up"></i>
         </div>
+        <a href="./login.html">ورود</a>
+        <a href="./signin.html">عضویت</a>
+      </div>
 
-        <!-- box-cadr-products -->
-        <div class="secton-box-cadr-products">
-            <div class="section-box-cadr-product">
-                <div class="box-cart-caret-up"><i class="fa fa-caret-up"></i></div>
-                <div class="header-box-cadr-products">
-                    <div class="number-product-box-cadr">
-                        <span>
-                            <small class="numberProductBoxCadr" id="numberProductBoxCadr">0</small>
-                            <p>کالا</p>
-                        </span>
-                    </div>
-                    <div class="getProduct">
-                        <p><a href="./cart-page.html">مشاهده سبد خرید</a></p>
-                        <i class="	fa fa-angle-left"></i>
-                    </div>
-                </div>
-                <div class="box-cadr-products">
-                    <ul id="boxCadrProducts">
-                        <!-- <li class="new-item-product">
-                            <div class="box-img-new-item"><img src="" alt=""></div>
-                            <h5></h5>
-                            <h6></h6>
-                            <div class="">
-                                <div class="button-minus" id=""></div>
-                                <span class="count-product"></span>
-                                <div class="button-plus" id=""></div>
-                            </div>
-                        </li> -->
-                    </ul>
-                </div>
-                <div class="box-total" id="boxTotal">
-                    <div class="total">
-                        <h4>مجموع</h4>
-                        <span id="total"></span> <small>تومان</small>
-                    </div>
-                    <div class="btn" id="btnRemove-all"><a href="./cart-page.html">ادامه خرید</a></div>
-                </div>
+      <!-- box-cadr-products -->
+      <div class="secton-box-cadr-products">
+        <div class="section-box-cadr-product">
+          <div class="box-cart-caret-up"><i class="fa fa-caret-up"></i></div>
+          <div class="header-box-cadr-products">
+            <div class="number-product-box-cadr">
+              <span>
+                <small class="numberProductBoxCadr" id="numberProductBoxCadr"
+                  >0</small
+                >
+                <p>کالا</p>
+              </span>
             </div>
+            <div class="getProduct">
+              <p><a href="./cart-page.html">مشاهده سبد خرید</a></p>
+              <i class="fa fa-angle-left"></i>
+            </div>
+          </div>
+          <div class="box-cadr-products">
+            <ul id="boxCadrProducts"></ul>
+          </div>
+          <div class="box-total" id="boxTotal">
+            <div class="total">
+              <h4>مجموع</h4>
+              <span id="total"></span> <small>تومان</small>
+            </div>
+            <div class="btn" id="btnRemove-all">
+              <a href="./cart-page.html">ادامه خرید</a>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- main -->
     <div class="main">
-        <div class="container">
-            <div class="section-total-productsItem">
-                <!-- section-Products -->
-                <div class="section-Products">
-                    <div class="container">
-                        <ul class="header-box-products">
-                            <li> عکس محصول</li>
-                            <li> نام محصول</li>
-                            <li>قیمت</li>
-                            <li>تعداد</li>
-                            <li>قیمت کل</li>
-                        </ul>
-                        <ul class="item-product" id="itemProduct">
-                            <!-- <li class="new-item-product" id="${cadrProduct.id}">
+      <div class="container">
+        <div class="section-total-productsItem">
+          <!-- section-Products -->
+          <div class="section-Products">
+            <div class="container">
+              <ul class="header-box-products">
+                <li>عکس محصول</li>
+                <li>نام محصول</li>
+                <li>قیمت</li>
+                <li>تعداد</li>
+                <li>قیمت کل</li>
+              </ul>
+              <ul class="item-product" id="itemProduct">
+                <!-- <li class="new-item-product" id="${cadrProduct.id}">
                                 <i class="fa fa-times-circle-o" id="closeProduct"></i>
                                 <div class="box-img-new-item"><img src="${cadrProduct.img}" alt=""></div>
                                 <p>${cadrProduct.name}</p>
@@ -140,103 +147,136 @@
                                     <div class="button-minus" id="${cadrProduct.id}">-</div>
                                 </div>
                             </li> -->
-                        </ul>
-                    </div>
-                </div>
-                <!-- section-totals -->
-                <div class="section-totals">
-                    <h2>مجموع کل سبد خرید</h2>
-                    <!-- <div class="order-count">
+              </ul>
+            </div>
+          </div>
+          <!-- section-totals -->
+          <div class="section-totals">
+            <h2>مجموع کل سبد خرید</h2>
+            <!-- <div class="order-count">
                         <p>تعداد کل محصولات</p>
                         <span>
                             <bdi id="countProducts" class="countProducts">0</bdi><small>کالا</small>
                         </span>
                     </div> -->
-                    <div class="order-total">
-                        <p>مجموع خرید</p>
-                        <span>
-                            <bdi id="totalProducts">0.0</bdi><small>تومان</small>
-                        </span>
-                    </div>
-                    <div class="button-totals">
-                        <div class="btn continue-shopping" id="continue-shopping"><a href="./index.html">ادامه خرید</a>
-                        </div>
-                        <div class="btn payment" id="payment">تایید و پرداخت</div>
-                    </div>
-                </div>
+            <div class="order-total">
+              <p>مجموع خرید</p>
+              <span>
+                <bdi id="totalProducts">0.0</bdi><small>تومان</small>
+              </span>
             </div>
+            <div class="button-totals">
+              <div class="btn continue-shopping" id="continue-shopping">
+                <a href="./index.html">ادامه خرید</a>
+              </div>
+              <div class="btn payment" id="payment">تایید و پرداخت</div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- footer -->
     <div class="footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-logo">
-                    <div class="logo">
-                        <img src="./img/logo/NIKE-FFF.png" alt="">
-                    </div>
-                </div>
-                <div class="footr-menu">
-                    <ul class="footer-menu2">
-                        <h3>ارتباط با ما</h3>
-                        <li><i class="	fa fa-caret-left"></i><a href="./about.html">درباره ما</a></li>
-                        <li><i class="	fa fa-caret-left"></i><a href="./contact.html">تماس با ما</a></li>
-                        <li><i class="	fa fa-caret-left"></i><a href="./cart-product.html">سبد خرید</a></li>
-                        <li><i class="	fa fa-caret-left"></i><a href="./login.html">ورود / عضویت</a></li>
-                    </ul>
-                    <ul class="footer-menu1">
-                        <h3>دسترسی سریع</h3>
-                        <li><i class="	fa fa-caret-left"></i><a href="./index.html">صفحه اصلی</a></li>
-                        <li><i class="	fa fa-caret-left"></i><a href="./page-product.html">مردانه</a></li>
-                        <li><i class="	fa fa-caret-left"></i><a href="./page-product.html">زنانه</a></li>
-                        <li><i class="	fa fa-caret-left activeFooter"></i><a href="./page-product.html"
-                                class="activeFooter">محصولات ما</a></li>
-                    </ul>
-                    <ul class="footer-menu3">
-                        <h3>نشانی ما</h3>
-                        <li>
-                            <i class="fa fa-phone"></i>
-                            <p>شماره تماس : <a href="tel:0123456789"><span>0123456789</span></a></p>
-                        </li>
-                        <li>
-                            <i class="	fa fa-map-marker"></i>
-                            <p>
-                                تهران - شهریار - دانشگاه پیام نور شهریار
-                            </p>
-                        </li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-logo">
+            <div class="logo">
+              <img src="./img/logo/NIKE-FFF.png" alt="" />
             </div>
-            <div class="footer-icon">
-                <ul>
-                    <li><a href="./"><i class="fa fa-paper-plane-o"></i></a></li>
-                    <li><a href="./"><i class="	fa fa-whatsapp"></i></a></li>
-                    <li><a href="./"><i class="	fa fa-instagram"></i></a></li>
-                </ul>
-            </div>
+          </div>
+          <div class="footr-menu">
+            <ul class="footer-menu2">
+              <h3>ارتباط با ما</h3>
+              <li>
+                <i class="fa fa-caret-left"></i
+                ><a href="./about.html">درباره ما</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-left"></i
+                ><a href="./contact.html">تماس با ما</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-left"></i
+                ><a href="./cart-page.html">سبد خرید</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-left"></i
+                ><a href="./login.html">ورود / عضویت</a>
+              </li>
+            </ul>
+            <ul class="footer-menu1">
+              <h3>دسترسی سریع</h3>
+              <li>
+                <i class="fa fa-caret-left"></i
+                ><a href="./index.html">صفحه اصلی</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-left"></i
+                ><a href="./page-product.html">مردانه</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-left"></i
+                ><a href="./page-product.html">زنانه</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-left activeFooter"></i
+                ><a href="./page-product.html" class="activeFooter"
+                  >محصولات ما</a
+                >
+              </li>
+            </ul>
+            <ul class="footer-menu3">
+              <h3>نشانی ما</h3>
+              <li>
+                <i class="fa fa-phone"></i>
+                <p>
+                  شماره تماس :
+                  <a href="tel:0123456789"><span>0123456789</span></a>
+                </p>
+              </li>
+              <li>
+                <i class="fa fa-map-marker"></i>
+                <p>تهران - شهریار - دانشگاه پیام نور شهریار</p>
+              </li>
+            </ul>
+          </div>
         </div>
+        <div class="footer-icon">
+          <ul>
+            <li>
+              <a href="./"><i class="fa fa-paper-plane-o"></i></a>
+            </li>
+            <li>
+              <a href="./"><i class="fa fa-whatsapp"></i></a>
+            </li>
+            <li>
+              <a href="./"><i class="fa fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-
 
     <!-- modal-product-add-remove -->
     <div class="modal-product-add-remove">
-        <div class="header-modal">
-            <h2>سبد خرید</h2>
-            <i class="fa fa-times-circle-o" id="closeModal"></i>
+      <div class="header-modal">
+        <h2>سبد خرید</h2>
+        <i class="fa fa-times-circle-o" id="closeModal"></i>
+      </div>
+      <div class="body-modal">
+        <p class="result-modal"></p>
+      </div>
+      <div class="footer-modal">
+        <div class="btn continue-shopping" id="continue-shopping">
+          ادامه خرید
         </div>
-        <div class="body-modal">
-            <p class="result-modal"></p>
-        </div>
-        <div class="footer-modal">
-            <div class="btn continue-shopping" id="continue-shopping">ادامه خرید</div>
-            <div class="btn payment" id="payment">تایید و پرداخت</div>
-        </div>
+        <div class="btn payment" id="payment">تایید و پرداخت</div>
+      </div>
     </div>
 
     <!-- coverBody -->
     <div id="coverBody"></div>
-
 
     <!-- --------------------javascript---------------- -->
     <!-- --slider-- -->
@@ -246,6 +286,5 @@
     <script src="./js/header.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/cart-page.js"></script>
-</body>
-
+  </body>
 </html>
